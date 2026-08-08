@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glöd — Confidentialité · Privacy</title>
+<meta name="description" content="Politique de confidentialité de Glöd. Ni compte, ni serveur, ni publicité, ni traqueur. / Glöd privacy policy. No account, no server, no ads, no trackers.">
+<style>
+  :root {
+    --bg: #0D0D0F;
+    --surface: #1A1A1E;
+    --ember: #FF5C1A;
+    --ember-light: #FFB01A;
+    --text: #F5F5F2;
+    --text-2: #8E8E93;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 48px 24px 80px; }
+  header { text-align: center; margin-bottom: 40px; }
+  .flame { width: 72px; height: 72px; margin: 0 auto 12px; filter: drop-shadow(0 0 24px rgba(255,92,26,.45)); }
+  h1 {
+    font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+    background: linear-gradient(180deg, var(--ember-light), var(--ember));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .tagline { color: var(--text-2); font-size: .95rem; margin-top: 4px; }
+  .lang-toggle {
+    display: flex; justify-content: center; gap: 8px; margin: 28px 0 36px;
+  }
+  .lang-toggle button {
+    background: var(--surface); color: var(--text-2); border: 1.5px solid transparent;
+    border-radius: 999px; padding: 8px 20px; font-size: .9rem; font-weight: 600;
+    cursor: pointer; transition: all .15s ease;
+  }
+  .lang-toggle button.active { color: var(--ember); border-color: var(--ember); }
+  .card {
+    background: var(--surface); border-radius: 16px; padding: 28px;
+    margin-bottom: 16px;
+  }
+  h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 12px; }
+  h3 {
+    font-size: 1rem; font-weight: 700; margin: 26px 0 10px;
+    color: var(--ember-light); letter-spacing: -0.01em;
+  }
+  .updated { color: var(--text-2); font-size: .85rem; margin-bottom: 20px; }
+  .big {
+    font-size: 1.1rem; font-weight: 600; color: var(--ember);
+    margin-bottom: 20px;
+  }
+  ul { list-style: none; }
+  li { padding-left: 22px; position: relative; margin-bottom: 12px; }
+  li::before {
+    content: ""; position: absolute; left: 4px; top: .62em;
+    width: 6px; height: 6px; border-radius: 50%; background: var(--ember);
+  }
+  ul.plain li::before { background: var(--text-2); }
+  p { margin-bottom: 12px; }
+  .muted { color: var(--text-2); font-size: .92rem; }
+  .callout {
+    border-left: 3px solid var(--ember); padding: 2px 0 2px 14px; margin: 16px 0;
+  }
+  .callout p { margin-bottom: 0; }
+  a { color: var(--ember); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer { text-align: center; margin-top: 40px; color: var(--text-2); font-size: .85rem; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <svg class="flame" viewBox="140 80 750 880" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="fire" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#FFC428"/>
+          <stop offset=".5" stop-color="#FF7A1A"/>
+          <stop offset="1" stop-color="#E22C0C"/>
+        </linearGradient>
+        <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#FFBE3C"/>
+          <stop offset="1" stop-color="#FFF0BE"/>
+        </linearGradient>
+      </defs>
+      <path fill="url(#fire)" d="M648 142 C430 258 298 408 294 620 C288 802 398 896 512 896 C634 896 734 798 730 626 C728 480 656 414 622 322 C598 250 612 192 648 142 Z"/>
+      <path fill="url(#core)" d="M578 448 C462 540 398 622 396 706 C393 796 452 836 512 836 C578 836 626 788 624 702 C623 610 600 560 588 516 C580 488 570 468 578 448 Z"/>
+    </svg>
+    <h1>Glöd</h1>
+    <p class="tagline">Forge ton corps, un jour à la fois · Forge your body, one day at a time</p>
+  </header>
+
+  <div class="lang-toggle" role="tablist">
+    <button id="btn-fr" onclick="setLang('fr')">Français</button>
+    <button id="btn-en" onclick="setLang('en')">English</button>
+  </div>
+
+  <!-- ===================== FRANÇAIS ===================== -->
+  <main id="content-fr">
+    <div class="card">
+      <h2>Politique de confidentialité</h2>
+      <p class="updated">Dernière mise à jour : 4 août 2026 · Version 2.0 de l'app</p>
+
+      <p class="big">Glöd n'a ni compte utilisateur, ni serveur, ni publicité, ni traqueur. Le développeur n'a accès à aucune de tes données.</p>
+
+      <p>Glöd est une app d'entraînement qui fonctionne hors ligne. Tes séances, ta progression et tes réglages sont enregistrés sur ton iPhone. Cette page décrit précisément ce que l'app lit, ce qu'elle écrit, et les seuls cas où une donnée quitte ton appareil.</p>
+
+      <h3>L'essentiel</h3>
+      <ul>
+        <li>Aucun compte à créer. Aucune adresse e-mail, aucun mot de passe, aucune identité.</li>
+        <li>Aucune publicité, aucun traqueur, aucun SDK d'analyse, aucun outil de mesure d'audience.</li>
+        <li>Aucune de tes données n'est vendue, louée, ni transmise à un courtier en données.</li>
+        <li>Le développeur de Glöd ne dispose d'aucun moyen technique de lire tes données.</li>
+        <li>Supprimer l'app supprime ce qui est stocké sur l'appareil.</li>
+      </ul>
+
+      <h3>Apple Santé (HealthKit)</h3>
+      <p>La liaison avec Apple Santé est <strong>désactivée par défaut</strong>. Elle ne s'active que si tu l'allumes toi-même dans les réglages de Glöd et que tu accordes l'autorisation demandée par iOS.</p>
+      <p>Quand elle est active, Glöd écrit dans Santé exactement <strong>deux types de données</strong> :</p>
+      <ul>
+        <li><strong>Tes séances d'entraînement</strong> — type d'activité (musculation ou entraînement fonctionnel), date de début et durée.</li>
+        <li><strong>Ton poids de corps</strong> — la valeur que tu saisis dans l'app.</li>
+      </ul>
+      <p>Glöd lit ces <strong>deux mêmes types, et uniquement eux</strong> : ton poids de corps, pour retrouver tes pesées passées quand tu demandes à importer ton historique et t'éviter de tout ressaisir ; tes séances, pour ne pas compter deux fois un entraînement déjà enregistré par une autre app.</p>
+      <div class="callout">
+        <p>Aucune autre donnée de santé n'est lue ni écrite. Ni fréquence cardiaque, ni sommeil, ni nombre de pas, ni calories, ni masse grasse, ni nutrition, ni cycle menstruel, ni aucune donnée médicale.</p>
+      </div>
+      <p>Ces données restent dans le magasin Santé de ton iPhone, dont Apple contrôle le chiffrement et la synchronisation. Elles ne sont transmises à personne. Elles ne servent <strong>à aucune publicité, aucun marketing, aucune revente et aucune exploitation statistique</strong>. Tu peux couper la liaison à tout moment dans Glöd, ou retirer l'autorisation dans Réglages → Confidentialité et sécurité → Santé.</p>
+
+      <h3>Photos de progression</h3>
+      <p>Glöd te permet d'enregistrer des photos de progression. Tu peux soit en prendre une avec l'appareil photo — c'est le seul usage de la caméra, et iOS te demande l'autorisation la première fois — soit en choisir une depuis ta photothèque via le sélecteur du système. Ce sélecteur fonctionne hors de l'app : Glöd ne reçoit que l'image que tu as choisie, et n'obtient aucun accès au reste de ta photothèque.</p>
+      <p>Ces photos sont enregistrées dans le dossier privé de l'app, sur ton iPhone. <strong>Glöd ne les envoie nulle part et elles ne se synchronisent sur aucun autre appareil</strong> — pas même via iCloud. Tu peux les exporter toi-même depuis l'app, via la feuille de partage du système : c'est le seul chemin qui les fait sortir, et il part toujours d'un geste de ta part. Elles sont incluses dans la sauvegarde de ton iPhone, comme le reste du contenu de l'app — chiffrée si tu sauvegardes sur iCloud, ou sur un ordinateur avec l'option de chiffrement activée. Les supprimer dans Glöd les supprime définitivement.</p>
+
+      <h3>Sauvegarde et synchronisation iCloud</h3>
+      <p>Depuis la version 2.0, ton profil, tes séances, tes records, tes badges, tes parcours, tes objectifs et tes mensurations sont sauvegardés dans la <strong>base privée de ton propre compte iCloud</strong>, via CloudKit. C'est ce qui te permet de retrouver ta flamme et ton historique sur un nouvel iPhone, ou de les partager entre ton iPhone et ton iPad.</p>
+      <p>Cette base appartient à ton compte Apple. Apple l'héberge pour toi, sous ton identifiant. <strong>Le développeur de Glöd n'y a aucun accès technique et ne peut pas la lire.</strong> Si tu n'es connecté à aucun compte iCloud, l'app fonctionne normalement, entièrement en local.</p>
+      <p class="muted">Le catalogue des exercices n'est pas synchronisé : il est embarqué dans l'app et reconstruit à l'identique sur chaque appareil.</p>
+
+      <h3>La fonction Duo</h3>
+      <p>Glöd permet de suivre la semaine d'un binôme. Il n'y a ni serveur, ni compte, ni annuaire : tout tient dans <strong>un lien que tu envoies toi-même</strong>, par le moyen de ton choix, à la personne de ton choix.</p>
+      <p>Ce lien contient uniquement : ton prénom tel que tu l'as saisi, un identifiant aléatoire propre à ton profil, qui ne désigne aucune identité, les jours de la semaine où tu as enregistré quelque chose, ton nombre de séances, ton volume total soulevé, tes jours de flamme et ton objectif hebdomadaire.</p>
+      <p>Aucune charge par exercice, aucun nom d'exercice, aucune photo et <strong>aucune donnée de santé</strong> n'y figurent. Rien n'est envoyé automatiquement : sans action de ta part, aucun lien n'existe. Le développeur ne reçoit jamais ces liens.</p>
+
+      <h3>Connexion à Internet</h3>
+      <p>Glöd fonctionne hors ligne. La seule requête réseau que l'app émet d'elle-même est le téléchargement des <strong>illustrations d'exercices</strong>, depuis le dépôt public <a href="https://github.com/yuhonas/free-exercise-db">free-exercise-db</a> hébergé par GitHub. Cette requête ne transporte aucune donnée personnelle : elle demande une image, rien d'autre. Comme toute requête web, GitHub voit l'adresse IP qui la formule ; c'est le fonctionnement normal d'Internet et Glöd n'y ajoute rien. Les images sont mises en cache sur l'appareil, et leur absence n'empêche pas l'app de fonctionner.</p>
+
+      <h3>Achats (Glöd+)</h3>
+      <p>Les abonnements et l'achat à vie passent exclusivement par <strong>l'App Store d'Apple</strong>, via StoreKit. Glöd ne voit jamais ton moyen de paiement, ton nom, ni ton adresse — l'app reçoit seulement d'iOS l'information « cet achat est actif ou non ». La facturation, les remboursements et le renouvellement sont gérés par Apple selon ses propres conditions.</p>
+
+      <h3>Notifications</h3>
+      <p>Les rappels d'entraînement, l'alerte de flamme et le timer de repos sont des <strong>notifications locales</strong>, programmées par l'app sur ton appareil. Glöd n'utilise aucun service de notification à distance et ne peut t'envoyer aucun message depuis l'extérieur.</p>
+
+      <h3>Enfants</h3>
+      <p>Glöd ne s'adresse pas aux enfants de moins de 13 ans et ne collecte sciemment aucune donnée les concernant. L'app ne demandant ni identité ni âge, elle ne dispose d'aucune information permettant d'identifier qui que ce soit.</p>
+
+      <h3>Effacer tes données</h3>
+      <ul class="plain">
+        <li><strong>Sur l'appareil</strong> — supprimer l'app efface son contenu local, photos de progression comprises.</li>
+        <li><strong>Dans iCloud</strong> — Réglages → ton nom → iCloud → Gérer le stockage du compte → Glöd → Supprimer les données.</li>
+        <li><strong>Dans Santé</strong> — les données écrites par Glöd restent dans Santé après la désinstallation ; elles se suppriment depuis l'app Santé, source par source.</li>
+      </ul>
+      <p class="muted">Le développeur ne détenant aucune de tes données, il n'y a rien à lui demander d'effacer — et aucune demande d'accès à formuler, faute de données à communiquer.</p>
+
+      <h3>Modifications</h3>
+      <p>Si une future version modifie ce qui est décrit ici, cette page sera mise à jour et la date en tête changera. Toute nouvelle fonctionnalité qui ferait sortir une donnée de ton appareil vers un service tiers ferait l'objet d'une demande de consentement explicite.</p>
+    </div>
+
+    <div class="card" id="support">
+      <h2>Assistance</h2>
+      <p>Une question, un problème, une idée ? Écris-moi :</p>
+      <p><a href="mailto:thomas.jcqm@gmail.com">thomas.jcqm@gmail.com</a></p>
+      <p class="muted">Réponse généralement sous 48 h.</p>
+    </div>
+  </main>
+
+  <!-- ===================== ENGLISH ===================== -->
+  <main id="content-en" hidden>
+    <div class="card">
+      <h2>Privacy Policy</h2>
+      <p class="updated">Last updated: August 4, 2026 · App version 2.0</p>
+
+      <p class="big">Glöd has no user account, no server, no ads and no trackers. The developer has access to none of your data.</p>
+
+      <p>Glöd is a training app that works offline. Your workouts, your progress and your settings are stored on your iPhone. This page describes exactly what the app reads, what it writes, and the only cases where data leaves your device.</p>
+
+      <h3>The essentials</h3>
+      <ul>
+        <li>No account to create. No email address, no password, no identity.</li>
+        <li>No ads, no trackers, no analytics SDK, no audience measurement tools.</li>
+        <li>None of your data is sold, rented, or shared with a data broker.</li>
+        <li>The developer of Glöd has no technical means of reading your data.</li>
+        <li>Deleting the app deletes what is stored on the device.</li>
+      </ul>
+
+      <h3>Apple Health (HealthKit)</h3>
+      <p>The Apple Health connection is <strong>off by default</strong>. It only turns on if you enable it yourself in Glöd's settings and grant the permission iOS asks for.</p>
+      <p>When it is on, Glöd writes exactly <strong>two types of data</strong> to Health:</p>
+      <ul>
+        <li><strong>Your workouts</strong> — activity type (traditional strength training or functional training), start date and duration.</li>
+        <li><strong>Your body weight</strong> — the value you enter in the app.</li>
+      </ul>
+      <p>Glöd reads those <strong>same two types, and only those</strong>: your body weight, to retrieve past weigh-ins when you ask to import your history so you don't have to re-enter everything; and your workouts, so a session already recorded by another app is not counted twice.</p>
+      <div class="callout">
+        <p>No other health data is read or written. No heart rate, no sleep, no step count, no calories, no body fat, no nutrition, no menstrual cycle, no medical records.</p>
+      </div>
+      <p>This data stays in your iPhone's Health store, whose encryption and syncing are controlled by Apple. It is not transmitted to anyone. It is <strong>never used for advertising, marketing, resale or any form of data mining</strong>. You can switch the connection off at any time in Glöd, or revoke the permission in Settings → Privacy &amp; Security → Health.</p>
+
+      <h3>Progress photos</h3>
+      <p>Glöd lets you save progress photos. You can either take one with the camera — that is the camera's only use, and iOS asks for permission the first time — or pick one from your library through the system picker. That picker runs outside the app: Glöd only receives the image you selected, and gains no access to the rest of your library.</p>
+      <p>These photos are saved in the app's private folder, on your iPhone. <strong>Glöd never uploads them and they never sync to any other device</strong> — not even through iCloud. You can export them yourself from the app, through the system share sheet: that is the only path that takes them out, and it always starts with an action of yours. They are included in your iPhone's backup, like the rest of the app's contents — encrypted if you back up to iCloud, or to a computer with the encryption option enabled. Deleting them in Glöd deletes them for good.</p>
+
+      <h3>iCloud backup and sync</h3>
+      <p>Since version 2.0, your profile, workouts, personal records, badges, skill paths, goals and body measurements are backed up to the <strong>private database of your own iCloud account</strong>, through CloudKit. That is what lets you find your streak and your history again on a new iPhone, or share them between your iPhone and your iPad.</p>
+      <p>That database belongs to your Apple account. Apple hosts it for you, under your identifier. <strong>The developer of Glöd has no technical access to it and cannot read it.</strong> If you are not signed in to iCloud, the app works normally, entirely on device.</p>
+      <p class="muted">The exercise catalogue is not synced: it ships inside the app and is rebuilt identically on each device.</p>
+
+      <h3>The Duo feature</h3>
+      <p>Glöd lets you follow a training partner's week. There is no server, no account and no directory: everything fits in <strong>a link you send yourself</strong>, by whatever means you choose, to whomever you choose.</p>
+      <p>That link contains only: your first name as you entered it, a random identifier tied to your profile, which names no identity, the days of the week on which you recorded something, your number of sessions, your total volume lifted, your streak days and your weekly target.</p>
+      <p>No per-exercise load, no exercise name, no photo and <strong>no health data</strong> are included. Nothing is sent automatically: without action on your part, no link exists. The developer never receives these links.</p>
+
+      <h3>Internet connection</h3>
+      <p>Glöd works offline. The only network request the app makes on its own is downloading <strong>exercise illustrations</strong> from the public <a href="https://github.com/yuhonas/free-exercise-db">free-exercise-db</a> repository hosted by GitHub. That request carries no personal data: it asks for an image, nothing else. As with any web request, GitHub sees the IP address making it; that is how the internet works, and Glöd adds nothing to it. Images are cached on the device, and their absence does not prevent the app from working.</p>
+
+      <h3>Purchases (Glöd+)</h3>
+      <p>Subscriptions and the lifetime purchase go exclusively through <strong>Apple's App Store</strong>, via StoreKit. Glöd never sees your payment method, your name or your address — the app only receives from iOS the information "this purchase is active or not". Billing, refunds and renewals are handled by Apple under its own terms.</p>
+
+      <h3>Notifications</h3>
+      <p>Workout reminders, the streak alert and the rest timer are <strong>local notifications</strong>, scheduled by the app on your device. Glöd uses no remote notification service and cannot send you any message from the outside.</p>
+
+      <h3>Children</h3>
+      <p>Glöd is not directed at children under 13 and knowingly collects no data concerning them. As the app asks for neither identity nor age, it holds no information that could identify anyone.</p>
+
+      <h3>Erasing your data</h3>
+      <ul class="plain">
+        <li><strong>On the device</strong> — deleting the app erases its local contents, progress photos included.</li>
+        <li><strong>In iCloud</strong> — Settings → your name → iCloud → Manage Account Storage → Glöd → Delete Data.</li>
+        <li><strong>In Health</strong> — data written by Glöd stays in Health after uninstalling; you can delete it from the Health app, source by source.</li>
+      </ul>
+      <p class="muted">Since the developer holds none of your data, there is nothing to ask them to erase — and no access request to make, for lack of data to hand over.</p>
+
+      <h3>Changes</h3>
+      <p>If a future version changes what is described here, this page will be updated and the date at the top will change. Any new feature that would send data from your device to a third-party service would be subject to an explicit consent request.</p>
+    </div>
+
+    <div class="card">
+      <h2>Support</h2>
+      <p>A question, an issue, an idea? Drop me a line:</p>
+      <p><a href="mailto:thomas.jcqm@gmail.com">thomas.jcqm@gmail.com</a></p>
+      <p class="muted">I usually reply within 48 hours.</p>
+    </div>
+  </main>
+
+  <footer>© 2026 Glöd</footer>
+</div>
+
+<script>
+  function setLang(lang) {
+    document.getElementById('content-fr').hidden = lang !== 'fr';
+    document.getElementById('content-en').hidden = lang !== 'en';
+    document.getElementById('btn-fr').classList.toggle('active', lang === 'fr');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.documentElement.lang = lang;
+  }
+  // Langue de l'appareil par défaut : français si navigateur en français, anglais sinon
+  setLang((navigator.language || '').toLowerCase().startsWith('fr') ? 'fr' : 'en');
+</script>
+</body>
+</html>
